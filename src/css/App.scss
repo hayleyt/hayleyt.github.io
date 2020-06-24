@@ -26,10 +26,13 @@ body{
     background: $portfolio-bg;
 }
 .skills{
-    background: #666;
+    background: white;
 }
 .certificates{
-    background: #999;;
+    background: #f5f0e1;;
+}
+.contact{
+    background: $portfolio-bg
 }
 
 //header
@@ -48,45 +51,59 @@ body{
 
 //portfolio
 .portfolio-title{
-    &>h3{
+    >h3{
         color: $portfolio-h3;
         font-size: 2rem;
         font-weight: 900;
-        margin: 6rem auto 1rem auto;
+        margin: 0 auto 1rem auto;
 
     }
-    &>h2{
+    >h2{
         color: $nav-btn-bg;
         font-family: $headline;
         margin-bottom: 5rem;;
     }
 }
 .row > .portfolio-column{
-    padding:0;
+    padding: 0 0.4rem;
 }
 .portfolio-item{
     position: relative;
     text-align: center;
     color: white;
+    &>a{
+        line-height: 0;
+    }
 }
 .caption{
     position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
-    &>h2{
-        font-size: 1em;
+    padding: 2rem 0 0 2rem;
+    margin-bottom: 0.75rem;
+    background: rgba($color: #000000, $alpha: 0.3);
+    text-align: left;
+    >h2{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.1em;
+        margin-bottom: 1rem;
     }
-    &>h3{
+    >h3{
         font-size: 1em;
     }
 }
-.portfolio-last{
-    margin-bottom: 10rem;;
+.portfolio{
+    padding: 6rem 0 12rem 0;
 }
 img{width: 100%}
 
-
+//skills
+.contact, .ou, .certificates, .skills{
+    padding: 15rem 0;
+    color: $header-bg;
+}
 
 @mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
     transition-property: $property;

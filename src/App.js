@@ -19,7 +19,7 @@ class App extends React.Component {
     handleClick = () => {
         const navOpenBtn = document.getElementById('nav-open-btn')
         const nav = document.querySelector('.nav');
-
+        const page = document.querySelector('page')
         if(this.state.menuIsOpen){
             nav.classList.add('nav-close')
             navOpenBtn.classList.remove('hidden')
@@ -35,7 +35,7 @@ class App extends React.Component {
 
     render(){
         return(
-            <div>
+            <div class="page" onClick={this.state.menuIsOpen ? this.handleClick : null}>
                     <Menu onClick={this.handleClick} />
                     <NavOpenBtn onClick={this.handleClick} />
                     <Header />

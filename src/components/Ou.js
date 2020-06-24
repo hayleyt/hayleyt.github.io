@@ -2,7 +2,7 @@ import React from 'react'
 
 function Ou() {
     return(
-        <div className="ou">
+        <div className="ou" id="OU">
             <div className="container">
                 <div className="row">
                     <div className="column">

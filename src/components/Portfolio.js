@@ -16,7 +16,7 @@ function Portfolio() {
                         <Project />
                         <Project />
                     </div>
-                    <div className="column portfolio-column portfolio-last">
+                    <div className="column portfolio-column">
                         <Project />
                         <Project />
                     </div>
