@@ -1,0 +1,146 @@
+//colours
+$header-bg: #2a2c3f;
+$nav-bg: #191a29;
+$nav-btn-bg:#101120;
+$about-me: #62d1c2;
+$portfolio-bg: #e1e1f5;
+$portfolio-h3: #c99e00;
+
+//fonts
+$headline:'Yeseva One', cursive;
+$text: 'Roboto', sans-serif;
+
+//font settings
+h1{font-family: $headline;}
+p{font-family: $text;}
+
+//section backgrounds
+body{
+    text-align: center;
+}
+.header{
+    background: $header-bg;
+    color: white;
+}
+.portfolio{
+    background: $portfolio-bg;
+}
+.skills{
+    background: #666;
+}
+.certificates{
+    background: #999;;
+}
+
+//header
+.header-content{
+    margin: 15rem 0 15rem 0;
+}
+.header-title{
+    font-size: 6rem;
+}
+.about-me-btn{
+    border-radius: 1px;
+    background: $nav-bg;
+    border: 1px solid $about-me;
+    color: $about-me;
+}
+
+//portfolio
+.portfolio-title{
+    &>h3{
+        color: $portfolio-h3;
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 6rem auto 1rem auto;
+
+    }
+    &>h2{
+        color: $nav-btn-bg;
+        font-family: $headline;
+        margin-bottom: 5rem;;
+    }
+}
+.row > .portfolio-column{
+    padding:0;
+}
+.portfolio-item{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    &>h2{
+        font-size: 1em;
+    }
+    &>h3{
+        font-size: 1em;
+    }
+}
+.portfolio-last{
+    margin-bottom: 10rem;;
+}
+img{width: 100%}
+
+
+
+@mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    transition-delay: $delay;
+}
+#nav-open-btn{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+    height: 5rem;
+    width: 5rem;
+    padding: 0;
+    border-radius: 1px;
+    background: $nav-bg;
+    border: none;
+}
+.nav{
+    background: $nav-bg;
+    width: 30rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+    &>button{
+        width:30rem;
+        height: 6rem;
+        border-radius: 0;
+        border: none;
+        background: $nav-btn-bg;
+    }
+}
+.nav-list{
+    list-style-type: none;
+}
+.nav-item {
+    margin: 2rem 1rem 4rem 2rem;
+    &>a{
+        color: white;
+    }
+}
+.nav-close{
+    @include transition-mix($property: right);
+    right: -30rem;
+}
+.nav-open{
+    @include transition-mix($property: right);
+    right: 0;
+}
+.hidden{
+    visibility: hidden;
+}
