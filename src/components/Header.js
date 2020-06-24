@@ -11,7 +11,7 @@ function Header(){
                             Full-stack developer based in London<br />
                             Looking for new opportunities
                         </p>
-                        <button className="about-me-btn">About me</button>
+                        <a className="about-me-btn" href="#SKILLS">About me</a>
                     </div>
                 </div>
             </div>

@@ -37,16 +37,20 @@ body{
 
 //header
 .header-content{
-    margin: 15rem 0 15rem 0;
+    margin: 15rem 0;
+    p{
+        margin-bottom: 4rem;;
+    }
 }
 .header-title{
     font-size: 6rem;
 }
-.about-me-btn{
+.about-me-btn, .about-me-btn:hover, .about-me-btn:active, .about-me-btn:visited{
     border-radius: 1px;
     background: $nav-bg;
     border: 1px solid $about-me;
     color: $about-me;
+    padding: 1rem 2rem;
 }
 
 //portfolio

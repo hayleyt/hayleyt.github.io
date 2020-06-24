@@ -14,26 +14,30 @@ function Portfolio() {
                 <div className="row">
                     <div className="column portfolio-column">
                         <Project 
-                            img="https://hayleyt.github.io/img/portfolio-1.jpg"
+                            img="tictactoe.jpg"
                             title="Tic Tac Toe game"
                             desc="Based on the reactjs tutorial with added features"
+                            link="https://hayleyt.github.io/tictactoe"
                         />
                         <Project 
                             img="https://hayleyt.github.io/img/portfolio-1.jpg"
-                            title="Tic Tac Toe game"
-                            desc="Based on the reactjs tutorial with added features"
+                            title="Project"
+                            desc="Some blurb about my project"
+                            link="#"
                         />
                     </div>
                     <div className="column portfolio-column">
                         <Project 
                             img="https://hayleyt.github.io/img/portfolio-1.jpg"
-                            title="Tic Tac Toe game"
-                            desc="Based on the reactjs tutorial with added features"
+                            title="Project"
+                            desc="Some blurb about my project"
+                            link="#"
                         />
                         <Project 
                             img="https://hayleyt.github.io/img/portfolio-1.jpg"
-                            title="Tic Tac Toe game"
-                            desc="Based on the reactjs tutorial with added features"
+                            title="Project"
+                            desc="Some blurb about my project"
+                            link="#"
                         />
                     </div>
                 </div>

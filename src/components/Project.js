@@ -3,7 +3,7 @@ import React from 'react'
 function Project(props) {
     return(
         <div className="portfolio-item">
-            <a href="#">
+            <a href={props.link}>
                 <span className="caption">
                     <h2>{props.title}</h2>
                     <h3>{props.desc}</h3>
