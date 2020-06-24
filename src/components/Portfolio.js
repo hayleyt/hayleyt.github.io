@@ -13,12 +13,28 @@ function Portfolio() {
                 </div>
                 <div className="row">
                     <div className="column portfolio-column">
-                        <Project />
-                        <Project />
+                        <Project 
+                            img="https://hayleyt.github.io/img/portfolio-1.jpg"
+                            title="Tic Tac Toe game"
+                            desc="Based on the reactjs tutorial with added features"
+                        />
+                        <Project 
+                            img="https://hayleyt.github.io/img/portfolio-1.jpg"
+                            title="Tic Tac Toe game"
+                            desc="Based on the reactjs tutorial with added features"
+                        />
                     </div>
                     <div className="column portfolio-column">
-                        <Project />
-                        <Project />
+                        <Project 
+                            img="https://hayleyt.github.io/img/portfolio-1.jpg"
+                            title="Tic Tac Toe game"
+                            desc="Based on the reactjs tutorial with added features"
+                        />
+                        <Project 
+                            img="https://hayleyt.github.io/img/portfolio-1.jpg"
+                            title="Tic Tac Toe game"
+                            desc="Based on the reactjs tutorial with added features"
+                        />
                     </div>
                 </div>
             </div>
