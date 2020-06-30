@@ -1,0 +1,84 @@
+//project grid
+
+//colours
+$header-bg: #2a2c3f;
+$nav-bg: #191a29;
+$nav-btn-bg:#101120;
+$about-me: #62d1c2;
+$portfolio-bg: #e1e1f5;
+$portfolio-h3: #c99e00;
+
+//fonts
+$headline:'Yeseva One', cursive;
+$text: 'Roboto', sans-serif;
+
+.project {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: [row-start] 50% [row-center] 50% [row-end];
+}
+
+.project-img {
+    grid-column: [row-start] / [row-center];
+}
+
+.project-desc {
+    grid-column: [row-center] / [row-end];
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #282c5b;
+    }
+}
+
+.project-img, .project-desc {
+    text-align: left;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    .project {
+        width: 100%;
+        display: grid;
+        grid-template-columns: [col-start] 1fr [col-end];
+        grid-auto-rows: [row1] 1fr [row2] 1fr [row3];
+    }
+    
+    .project-desc, .project-img {
+        grid-column: [col-start] / [col-end];
+    }
+
+    .project-img {
+        grid-row: [row1] / [row2];
+    }
+
+    .project-desc {
+        grid-row: [row2] / [row3];
+    }
+    
+    .project {
+        padding: 10px;
+    }
+}
+
+//portfolio
+.portfolio-title{
+    >h3{
+        color: $portfolio-h3;
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 0 auto 1rem auto;
+
+    }
+    >h2{
+        color: $nav-btn-bg;
+        font-family: $headline;
+        margin-bottom: 5rem;;
+    }
+}
+.portfolio{
+    padding: 6rem 0 12rem 0;
+}
+img{width: 100%}
