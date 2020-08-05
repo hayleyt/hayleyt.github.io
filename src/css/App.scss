@@ -1,12 +1,15 @@
 @import '_portfolio';
 
 //colours
-$header-bg: #2a2c3f;
-$nav-bg: #191a29;
-$nav-btn-bg:#101120;
+$header-bg: #0F0F18;
+$nav-bg: #191827;
+$nav-btn-bg:#b58b00;
 $about-me: #62d1c2;
 $portfolio-bg: #e1e1f5;
-$portfolio-h3: #c99e00;
+$portfolio-h3: #b58b00;
+$maths: #42815e;
+$stats: #9c7047;
+$it: #37346e;
 
 //fonts
 $headline:'Yeseva One', cursive;
@@ -26,8 +29,9 @@ body{
     text-align: center;
 }
 .header{
-    background: $header-bg;
-    color: white;
+    background-image: url("hex-bkg5.png");
+    background-repeat: repeat;
+    background-size: auto;
 }
 .portfolio{
     background: $portfolio-bg;
@@ -41,21 +45,52 @@ body{
 
 //header
 .header-content{
+    color: white;
     margin: 15rem 0;
     p{
-        margin-bottom: 4rem;;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-style: italic;
+        font-size: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.105);
     }
 }
 .header-title{
-    font-size: 6rem;
+    font-size: 8rem;
+}
+.about-me-btn{
+    margin-top: 3rem;;
+    padding: 0 4rem;
 }
 .about-me-btn, .about-me-btn:hover, .about-me-btn:active, .about-me-btn:visited{
     border-radius: 1px;
-    background: $nav-bg;
-    border: 1px solid $about-me;
-    color: $about-me;
-    padding: 1rem 2rem;
+    border: none;
+    background: $portfolio-h3;
+    color: white;
+    >a{
+        color: white;
+        border: none;
+    }
 }
+
+//Open Uni
+
+.module{
+}
+.circle-icon{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    margin: 3rem auto 2rem auto;
+    .fas{
+        font-size: 3.5rem;
+        color: white;
+        margin: 3.2rem auto;
+    }
+}
+.it{background-color: $it;}
+.stats{background-color: $stats;}
+.maths{background-color: $maths;}
 
 //Sections
 .contact, .ou, .certificates, .skills{
@@ -96,7 +131,7 @@ body{
     width: 5rem;
     padding: 0;
     border-radius: 1px;
-    background: $nav-bg;
+    background: $nav-btn-bg;
     border: none;
 }
 .nav{
@@ -114,18 +149,19 @@ body{
         height: 6rem;
         border-radius: 0;
         border: none;
-        background: $nav-btn-bg;
+        background: $header-bg;
     }
 }
 .nav-list{
     list-style-type: none;
 }
-.nav-item {
-    margin: 2rem 1rem 4rem 2rem;
-    &>a{
-        color: white;
-    }
+.nav-item{
+    padding: 2rem 0;
 }
+a.nav-link{
+        color: white;
+        padding: 2rem 10rem 2rem 2rem;
+    }
 .nav-close{
     @include transition-mix($property: right);
     right: -30rem;

@@ -8,18 +8,20 @@ function Portfolio() {
                 <h3>PORTFOLIO</h3>
                 <h2>Recent Projects</h2>
             </div>
-            <Project 
-                img="todo-list.jpg"
-                title="Todo List App"
-                desc="Designed for mobile. Toggle for Dark and Light mode. Built with React."
-                link="https://hayleyt.github.io/todo-list"
-            />
-            <Project 
-                img="tictactoe.jpg"
-                title="Tic Tac Toe game"
-                desc="Based on the reactjs tutorial with added features"
-                link="https://hayleyt.github.io/tic-tac-toe"
-            />
+            <div className="projects">
+                <Project 
+                    img="todo-list1.jpg"
+                    title="Todo List App"
+                    desc="Designed for mobile. Toggle for Dark and Light mode. Built with React."
+                    link="https://hayleyt.github.io/todo-list"
+                />
+                <Project 
+                    img="tictactoe1.jpg"
+                    title="Tic Tac Toe game"
+                    desc="Based on the reactjs tutorial with added CSS and features: Play the computer and Cheat!"
+                    link="https://hayleyt.github.io/tic-tac-toe"
+                />
+            </div>
         </div>
     )
 }

@@ -5,11 +5,11 @@ function Project(props) {
         <div className="project">
             <a href={props.link} className="project-img">
                 <img src={props.img} alt={props.title}/>
+                <div className="project-desc">
+                    <h3>{props.title}</h3>
+                    <div>{props.desc}</div>
+                </div>
             </a>
-            <div className="project-desc">
-                <h3>{props.title}</h3>
-                <div>{props.desc}</div>
-            </div>
         </div>
     )
 }

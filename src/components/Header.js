@@ -7,11 +7,12 @@ function Header(){
                 <div className="row">
                     <div className="column header-content">
                         <h1 className="header-title">Hayley Tong</h1>
-                        <p>
-                            Full-stack developer based in London<br />
-                            Looking for new opportunities
-                        </p>
-                        <a className="about-me-btn" href="#SKILLS">About me</a>
+                        <p>Computing and Statistics Student at the Open University</p>
+                        <p>Full stack developer</p>
+                        <p>Keen to secure a place in a technology company with opportunities for progression</p>
+                        <button className="about-me-btn">
+                            <a href="#SKILLS">About me</a>
+                        </button>
                     </div>
                 </div>
             </div>

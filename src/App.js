@@ -38,9 +38,9 @@ class App extends React.Component {
                     <Menu onClick={this.handleClick} />
                     <NavOpenBtn onClick={this.handleClick} />
                     <Header />
-                    <Skills />
-                    <Ou />
                     <Portfolio />
+                    <Ou />
+                    <Skills />
                     <Contact />
 
             </div>
