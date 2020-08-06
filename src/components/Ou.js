@@ -35,8 +35,7 @@ function Ou() {
                                 circle="circle-icon stats"
                                 title="Analysing data"
                                 completed="Studying"
-                                desc="Skills to make 
-                                sense of data. It covers models for data, estimation, 
+                                desc="This module covers models for data, estimation, 
                                 confidence intervals, hypothesis testing and regression."
                             />
                             <Module 
@@ -83,7 +82,7 @@ function Ou() {
                                 title="Intro to computing and IT 2"
                                 check="fas fa-check"
                                 completed="Completed"
-                                desc="Introduces python to analyse data from the Office 
+                                desc="Using python to analyse data from the Office 
                                 for National Statistics. Completed a small project building a 
                                 flash cards app."
                             />

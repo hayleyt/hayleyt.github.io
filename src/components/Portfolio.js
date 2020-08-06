@@ -21,6 +21,12 @@ function Portfolio() {
                     desc="Based on the reactjs tutorial with added CSS and features: Play the computer and Cheat!"
                     link="https://hayleyt.github.io/tic-tac-toe"
                 />
+                <Project 
+                    img="weather-app.jpg"
+                    title="Weather app"
+                    desc="Fetches data from Open Weather Map API. Built with React."
+                    link="https://hayleyt.github.io/weather-app"
+                />
             </div>
         </div>
     )
