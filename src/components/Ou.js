@@ -9,7 +9,7 @@ function Ou() {
                     <div className="column">
                         <h2>The Open Univesity</h2>
                         <h1>Computing and Statistics BSc. Hons</h1>
-                        <div className="row">
+                        <div className="ou-level">
                             <Module 
                                 i="fas fa-laptop-code"
                                 circle="circle-icon it"
@@ -47,7 +47,7 @@ function Ou() {
                                 multivariate analysis, and Bayesian statistics"
                             />
                         </div>
-                        <div className="row">
+                        <div className="ou-level">
                             <Module 
                                 i="fas fa-calculator"
                                 title="Essential mathematics"

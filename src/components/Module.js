@@ -2,7 +2,7 @@ import React from 'react'
 
 function Module(props) {
     return(
-        <div className="module column column-25">
+        <div className="module">
             <div className={props.circle}>
                 <i className={props.i}></i>
             </div>
