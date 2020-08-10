@@ -9,7 +9,7 @@ function Module(props) {
             <h3>{props.title}</h3>
             <div className="credits">30 credit module</div>
             <div className="completed">
-            <i class={props.check}></i>
+            <i className={props.check}></i>
                 {props.completed}
             </div>
             <p>{props.desc}</p>

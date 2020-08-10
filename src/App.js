@@ -34,7 +34,7 @@ class App extends React.Component {
 
     render(){
         return(
-            <div class="page" onClick={this.state.menuIsOpen ? this.handleClick : null}>
+            <div className="page" onClick={this.state.menuIsOpen ? this.handleClick : null}>
                     <Menu onClick={this.handleClick} />
                     <NavOpenBtn onClick={this.handleClick} />
                     <Header />
