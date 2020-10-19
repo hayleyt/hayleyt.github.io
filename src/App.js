@@ -1,12 +1,16 @@
 import React from 'react'
-import Menu from './components/Menu'
-import NavOpenBtn from './components/NavOpenBtn'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header'
+import Footer from './components/Footer'
+import Nav from './components/Nav'
 import Portfolio from './components/Portfolio'
-import Skills from './components/Skills'
-import Certificates from './components/Certificates'
-import Contact from './components/Contact'
-import Ou from './components/Ou'
+import Blog from './blog/Blog'
+import About from './components/About'
+import Tictactoe from './components/projects/Tictactoe'
+import CurrencyConverter from './components/projects/CurrencyConverter'
+import TodoList from './components/projects/TodoList'
+import Weather from './components/projects/Weather'
+
 import './css/normalize.css'
 import './css/milligram/src/milligram.sass'
 import './css/App.scss'
@@ -16,33 +20,39 @@ class App extends React.Component {
         menuIsOpen: false
     }
 
-    handleClick = () => {
-        const navOpenBtn = document.getElementById('nav-open-btn')
-        const nav = document.querySelector('.nav');
-        if(this.state.menuIsOpen){
-            nav.classList.add('nav-close')
-            navOpenBtn.classList.remove('hidden')
-            nav.classList.remove('nav-open')
-        } else{
-            nav.classList.remove('nav-close')
-            navOpenBtn.classList.add('hidden')
-            nav.classList.add('nav-open')
+    componentDidMount () {
+        //make navbar sticky on scroll
+        window.onscroll = function() {myFunction()};
+        const navbar = document.getElementById("navbar");
+        const sticky = navbar.offsetTop;
+        function myFunction() {
+           if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+           } else {
+              navbar.classList.remove("sticky");
+           }
         }
-
-        this.setState({menuIsOpen: !this.state.menuIsOpen})
     }
 
     render(){
         return(
-            <div className="page" onClick={this.state.menuIsOpen ? this.handleClick : null}>
-                    <Menu onClick={this.handleClick} />
-                    <NavOpenBtn onClick={this.handleClick} />
+            <div className="page" >
+                <div className="make-footer-stick">
                     <Header />
-                    <Portfolio />
-                    <Ou />
-                    <Skills />
-                    <Contact />
-
+                    <BrowserRouter>
+                        <Nav />
+                        <Switch>
+                            <Route path="/" component={Portfolio} exact />
+                            <Route path="/blog" component={Blog} />
+                            <Route path="/about" component={About} />
+                            <Route path="/tictactoe" component={Tictactoe} />
+                            <Route path="/currency-converter" component={CurrencyConverter} />
+                            <Route path="/todo-list" component={TodoList} />
+                            <Route path="/weather" component={Weather} />
+                        </Switch>
+                    </BrowserRouter>
+                </div>
+                <Footer />
             </div>
           )
     }

@@ -9,71 +9,88 @@ $portfolio-h3: #c99e00;
 $headline:'Yeseva One', cursive;
 $text: 'Roboto', sans-serif;
 
-
-.projects{
-    max-width: 1020px;
-    margin: 0 auto;
+.portfolio-gallery {
+    max-width: 1120px;
+    margin: auto;
+}
+ul.portfolio-grid {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
     display: flex;
+    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: left;
 }
-.project {
-    width: 500px;
-    margin: 0 0.5rem;
+li.portfolio-item {
+    background-color: #ccc;
+    width: 24%;
+    margin: 0.5%
+}
+div.project-box {
+    width: 100%;
     position: relative;
-    >a{
-        color: black;
-        font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
     }
 }
-
-.project-desc {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 1.6rem;
-    padding: 1rem;
+.project-img {
     position: absolute;
-    text-align: left;
-    bottom: 4rem; left: 2rem; right: 2rem;
-    h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: black;
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media only screen and (max-width: 1019px) {
-    .projects{
-        justify-content: center;
-    }
-    .project{
-        width: 600px;
-    }
-    .project-desc{
-        font-size: 1.5rem;
-        h3{
-            font-size: 2rem;;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #e8e8e8;
+    background-position: center center;
+    background-size: 100% 100%;
+    transition: all 0.2s ease-in;
+    &:hover {
+        background-color: #cccccc;
+        background-size: 120% 120%;
+        .project-title {
+            bottom: 2rem;
+            z-index: 1;
         }
     }
 }
-
-//portfolio
-.portfolio-title{
-    >h3{
-        color: $portfolio-h3;
+.project-title {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: -5rem; left: 2rem; right: 2rem;
+    z-index: -1;
+    transition: all 0.2s ease-in;
+    h3 {
         font-size: 2rem;
-        font-weight: 900;
-        margin: 0 auto 1rem auto;
+        color: #3e3e3e;
+        margin: 0;
+        padding: 5px 0;
+    }
+}
+.img-currency-converter { background-image: url('/currency.png'); }
+.img-tictactoe { background-image: url('/tictactoe.png');}
+.img-todo-list { background-image: url('/todo.png');}
+.img-weather { background-image: url('/weather.png');}
 
+@media only screen and (max-width: 999px) {
+    li.portfolio-item{
+        width: 32.33%;
+        margin: 0.5%;
     }
-    >h2{
-        color: $portfolio-h2;
-        font-family: $headline;
-        margin-bottom: 5rem;;
+    .project-title {
+        bottom: 2rem;
+        z-index: 1;
     }
 }
-.portfolio{
-    padding: 6rem 0 12rem 0;
+
+@media only screen and (max-width: 700px) {
+    li.portfolio-item{
+        width: 49%;
+    }
 }
-img{width: 100%}
+
+@media only screen and (max-width: 440px) {
+    .project-title h3 {
+        font-size: 1.8rem;
+    }
+}

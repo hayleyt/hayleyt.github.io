@@ -1,35 +1,64 @@
 import React from 'react'
-import Project from './Project'
+import { Link } from 'react-router-dom'
 
 function Portfolio() {
-    return(
-        <div className="portfolio" id="PORTFOLIO">
-            <div className="portfolio-title">
-                <h3>PORTFOLIO</h3>
-                <h2>Recent Projects</h2>
-            </div>
-            <div className="projects">
-                <Project 
-                    img="todo-list1.jpg"
-                    title="Todo List App"
-                    desc="Designed for mobile. Toggle for Dark and Light mode. Built with React."
-                    link="https://hayleyt.github.io/todo-list"
-                />
-                <Project 
-                    img="tictactoe1.jpg"
-                    title="Tic Tac Toe game"
-                    desc="Based on the reactjs tutorial with added CSS and features: Play the computer and Cheat!"
-                    link="https://hayleyt.github.io/tic-tac-toe"
-                />
-                <Project 
-                    img="weather-app.jpg"
-                    title="Weather app"
-                    desc="Fetches data from Open Weather Map API. Built with React."
-                    link="https://hayleyt.github.io/weather-app"
-                />
-            </div>
-        </div>
-    )
+   return(
+      <main className="portfolio" id="PORTFOLIO">
+         <nav className="portfolio-gallery">
+            <ul className="portfolio-grid">
+
+               <li className="portfolio-item">
+                  <Link to="/tictactoe">
+                     <div className="project-box">
+                        <div className="project-img img-tictactoe">
+                           <div className="project-title">
+                              <h3>Tic Tac Toe</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </Link>
+               </li>
+
+               <li className="portfolio-item">
+                  <Link to="/currency-converter">
+                     <div className="project-box">
+                        <div className="project-img img-currency-converter">
+                           <div className="project-title">
+                              <h3>Currency converter</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </Link>
+               </li>
+
+               <li className="portfolio-item">
+                  <Link to="/todo-list">
+                     <div className="project-box">
+                        <div className="project-img img-todo-list">
+                           <div className="project-title">
+                              <h3>Todo list</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </Link>
+               </li>
+
+               <li className="portfolio-item">
+                  <Link to="/weather">
+                     <div className="project-box">
+                        <div className="project-img img-weather">
+                           <div className="project-title">
+                              <h3>Weather app</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </Link>
+               </li>
+            </ul>
+
+         </nav>
+      </main>
+   )
 }
 
 export default Portfolio

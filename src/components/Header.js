@@ -1,23 +1,30 @@
 import React from 'react'
 
-function Header(){
-    return (
-        <div className="header" id="HEADER">
+class Header extends React.Component {
+
+   componentDidMount () {
+      const byline = document.getElementById('byline')
+      byline.classList.add('type-effect')
+   }
+
+   render() {
+      return (
+         <header className="header">
             <div className="container">
-                <div className="row">
-                    <div className="column header-content">
+               <div className="row">
+                  <div className="column header-content">
+                     <a href="/">
                         <h1 className="header-title">Hayley Tong</h1>
-                        <p>Computing and Statistics Student at the Open University</p>
-                        <p>Full stack developer</p>
-                        <p>Keen to secure a place in a technology company with opportunities for progression</p>
-                        <button className="about-me-btn">
-                            <a href="#SKILLS">About me</a>
-                        </button>
-                    </div>
-                </div>
+                        <p className="byline" id="byline" >
+                           {'< Front End Engineer />'}
+                        </p>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    )
+         </header>
+      )
+   }
 }
 
 export default Header
