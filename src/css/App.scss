@@ -1,5 +1,6 @@
 @import '_portfolio';
 @import '_project';
+@import '_blog';
 
 //colours
 $header-bg: #c8f0e3;
@@ -183,6 +184,9 @@ p.byline {
 .sticky + .portfolio,
 .sticky + .project-page {
     padding-top: 105px;
+}
+.sticky + .blog {
+    padding-top: 45px;
 }
 
 //footer

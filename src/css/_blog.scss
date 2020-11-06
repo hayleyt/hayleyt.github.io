@@ -1,0 +1,48 @@
+.blog {
+    margin: auto;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: left;
+    
+    .post {
+        padding: 50px 0 30px 0;
+        border-bottom: 1px dashed #ccc;
+    }
+    h2,h4,h5,h6 {
+        font-weight: bold;
+    }
+    h2,h3 {
+        letter-spacing: normal;
+        margin-bottom: 10px;
+        color: #383d58;
+    }
+
+    h2 {
+        font-size: 2.4rem;;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    a{
+        color: #383d58;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    ul.steps {
+        list-style-type: decimal;
+        li {
+            list-style-type: numbers;
+            padding-left: 2em;
+            text-indent: -1.3em;
+            margin-bottom: 1em;
+            }
+    }
+}
