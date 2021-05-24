@@ -5,7 +5,7 @@ function CurrencyConverter() {
       <article className="project-page currency-converter">
          <h2>CURRENCY CONVERTER</h2>
          <p className="role">Designed and built by Hayley Tong</p>
-         <a href="https://hayleyt.github.io/currency-converter/">
+         <a href="https://hayleyt.github.io/currency-converter-app/">
             <button>VIEW PROJECT</button>
          </a>
          <div className="lists">
@@ -31,14 +31,14 @@ function CurrencyConverter() {
                   <li><strong>Deployment: </strong>Github pages</li>
                   <li>
                      <strong>Source code: </strong>
-                     <a href="https://github.com/hayleyt/currency-converter">github.com/hayleyt/currency-converter</a>
+                     <a href="https://github.com/hayleyt/currency-converter-app">github.com/hayleyt/currency-converter</a>
                   </li>
                   <li><strong>Icons: </strong><a href="https://www.countryflags.com/">Country flags</a>, FontAwesome</li>
                </ul>
             </div>
          </div>
          <figure>
-            <a href="https://hayleyt.github.io/currency-converter/">
+            <a href="https://hayleyt.github.io/currency-converter-app/">
                <img src="./currency-header.jpg" alt="currency-converter-header-image"/>
             </a>
             <figcaption>Project screen shots</figcaption>
