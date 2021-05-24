@@ -5,7 +5,7 @@ function CurrencyConverter() {
       <article className="project-page currency-converter">
          <h2>CURRENCY CONVERTER</h2>
          <p className="role">Designed and built by Hayley Tong</p>
-         <a href="https://hayleyt.github.io/currency-converter-app/" target="_blank">
+         <a href="https://hayleyt.github.io/currency-converter-app/" target="_blank" rel="noopener noreferrer">
             <button>VIEW PROJECT</button>
          </a>
          <div className="lists">
@@ -26,20 +26,20 @@ function CurrencyConverter() {
                   <li><strong>HTML</strong></li>
                   <li><strong>CSS: </strong>SASS, CSS Grid, Flexbox</li>
                   <li><strong>Javascript: </strong>Vue.js, Node.js, NPM</li>
-                  <li><strong>API: </strong><a href="https://exchangeratesapi.io/" target="_blank">exchangeratesapi.io</a></li>
+                  <li><strong>API: </strong><a href="https://exchangeratesapi.io/" target="_blank" rel="noopener noreferrer">exchangeratesapi.io</a></li>
                   <li><strong>Module bundler: </strong>Webpack</li>
                   <li><strong>Deployment: </strong>Github pages</li>
                   <li>
                      <strong>Source code: </strong>
-                     <a href="https://github.com/hayleyt/currency-converter-app" target="_blank">github.com/hayleyt/currency-converter</a>
+                     <a href="https://github.com/hayleyt/currency-converter-app" target="_blank" rel="noopener noreferrer">github.com/hayleyt/currency-converter</a>
                   </li>
-                  <li><strong>Icons: </strong><a href="https://www.countryflags.com/" target="_blank">Country flags</a>, FontAwesome</li>
+                  <li><strong>Icons: </strong><a href="https://www.countryflags.com/" target="_blank" rel="noopener noreferrer">Country flags</a>, FontAwesome</li>
                </ul>
             </div>
          </div>
          <figure>
-            <a href="https://hayleyt.github.io/currency-converter-app/" target="_blank">
-               <img src="./currency-header.jpg" alt="currency-converter-header-image"/>
+            <a href="https://hayleyt.github.io/currency-converter-app/" target="_blank" rel="noopener noreferrer">
+               <img src="./currency-header.jpg" alt="currency-converter-project-screenshots"/>
             </a>
             <figcaption>Project screen shots</figcaption>
          </figure>

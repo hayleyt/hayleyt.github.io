@@ -5,7 +5,7 @@ function TodoList() {
       <article className="project-page">
          <h2>TODO LIST APP</h2>
          <p className="role">Designed and built by Hayley Tong</p>
-         <a href="https://hayleyt.github.io/todo-list-app/" target="_blank">
+         <a href="https://hayleyt.github.io/todo-list-app/" target="_blank" rel="noopener noreferrer">
             <button>VIEW PROJECT</button>
          </a>
          <div className="lists">
@@ -30,14 +30,14 @@ function TodoList() {
                   <li><strong>Deployment: </strong>Github pages</li>
                   <li>
                      <strong>Source code: </strong>
-                     <a href="https://github.com/hayleyt/todo-list-app" target="_blank">github.com/hayleyt/todo-list</a>
+                     <a href="https://github.com/hayleyt/todo-list-app" target="_blank" rel="noopener noreferrer">github.com/hayleyt/todo-list</a>
                   </li>
                </ul>
             </div>
          </div>
          
          <figure>
-            <a href="https://hayleyt.github.io/todo-list-app/" target="_blank">
+            <a href="https://hayleyt.github.io/todo-list-app/" target="_blank" rel="noopener noreferrer">
                <img src="./todo-screenshots.png" alt="todo-list-app-screen-shots"/>
             </a>
             <figcaption>Project screen shots</figcaption>

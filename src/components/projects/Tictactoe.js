@@ -5,7 +5,7 @@ function Tictactoe() {
       <article className="project-page">
          <h2>TIC TAC TOE GAME</h2>
          <p className="role">Designed and built by Hayley Tong</p>
-         <a href="https://hayleyt.github.io/tictactoe-app/" target="_blank">
+         <a href="https://hayleyt.github.io/tictactoe-app/" target="_blank" rel="noopener noreferrer">
             <button>VIEW PROJECT</button>
          </a>
          <div className="lists">
@@ -29,13 +29,13 @@ function Tictactoe() {
                   <li><strong>Deployment: </strong>Github pages</li>
                   <li>
                      <strong>Source code: </strong>
-                     <a href="https://github.com/hayleyt/tictactoe-app" target="_blank">github.com/hayleyt/tic-tac-toe</a>
+                     <a href="https://github.com/hayleyt/tictactoe-app" target="_blank" rel="noopener noreferrer">github.com/hayleyt/tic-tac-toe</a>
                   </li>
                </ul>
             </div>
          </div>
          <figure>
-            <a href="https://hayleyt.github.io/tictactoe-app/" target="_blank">
+            <a href="https://hayleyt.github.io/tictactoe-app/" target="_blank" rel="noopener noreferrer">
                <img src="./tictactoe-screenshots.jpg" alt="tic-tac-toe-screen-shots"/>
             </a>
             <figcaption>Project screen shots</figcaption>

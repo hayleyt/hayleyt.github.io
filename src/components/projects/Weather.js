@@ -5,7 +5,7 @@ function Weather() {
       <article className="project-page">
          <h2>WEATHER APP</h2>
          <p className="role">Designed and built by Hayley Tong</p>
-         <a href="https://hayleyt.github.io/weather-app/" target="_blank">
+         <a href="https://hayleyt.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
             <button>VIEW PROJECT</button>
          </a>
          <div className="lists">
@@ -25,18 +25,18 @@ function Weather() {
                   <li><strong>HTML: </strong>JSX</li>
                   <li><strong>CSS: </strong>Flexbox</li>
                   <li><strong>Javascript: </strong>React.js, Node.js, NPM</li>
-                  <li><strong>API: </strong><a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></li>
+                  <li><strong>API: </strong><a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">openweathermap.org</a></li>
                   <li><strong>Module bundler: </strong>Webpack</li>
                   <li><strong>Deployment: </strong>Github pages</li>
                   <li>
                      <strong>Source code: </strong>
-                     <a href="https://github.com/hayleyt/weather" target="_blank">github.com/hayleyt/weather</a>
+                     <a href="https://github.com/hayleyt/weather-app" target="_blank" rel="noopener noreferrer">github.com/hayleyt/weather-app</a>
                   </li>
                </ul>
             </div>
          </div>
          <figure>
-            <a href="https://hayleyt.github.io/weather-app/" target="_blank">
+            <a href="https://hayleyt.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
                <img className="weather-screenshot" src="./weather-screenshot.jpg" alt="weather-app-screen-shot"/>
             </a>
             <figcaption>Project screen shot</figcaption>
